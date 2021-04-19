@@ -3,7 +3,7 @@
 This project uses a ResNet-18 model as a base in a model with dropout and fully connected layers to perform fine-grained prediction of the Imagewoof Dataset. 
 The approach used is as follows:
 
-1. Cutout Augmentations. 2 Random squares of 12*12 pixels each were cutout from the 128*128 3 channel 	 images. The cutouts act as a method of regularization which does not create model sensitive hyperparameters, and hence is preferable for smaller, less deep models. This is suggested in this paper: https://arxiv.org/pdf/1708.04552.pdf 
+1. Cutout Augmentations. 2 Random squares of 12 by 12 pixels each were cutout from the 128by 128 3 channel images. The cutouts act as a method of regularization which does not create model sensitive hyperparameters, and hence is preferable for smaller, less deep models. This is suggested in this paper: https://arxiv.org/pdf/1708.04552.pdf 
 
 Before cutout:
 

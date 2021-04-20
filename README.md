@@ -40,6 +40,10 @@ A small segment in the second region was used for implementing the final Stochai
 5. This method was benchmarked against a RedceOnPlateau callback implementation.
 
 
-The final results obtianed are as follows:
+The intermidiate results obtianed are as follows:
 
 ![Valid](/Images/Val-loss.png)
+
+After dropping all dropout layers used previously, and replacing with BatchNormalization prior to Activation, the model was trained for 10 epochs. The overall reduction in valiadation loss is promising.
+
+![new-valid](/Images/Up-Val_Loss.png)

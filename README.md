@@ -1,6 +1,7 @@
 # Dog Breed Distinction model trained on the Imagewoof Dataset
 
 This project uses a ResNet-18 model as a base in a model with dropout and fully connected layers to perform fine-grained prediction of the Imagewoof Dataset. 
+Given the constraints, this is meant to be a benchmarking/ demonstration of approach.
 The approach used is as follows:
 
 1. Cutout Augmentations. 2 Random squares of 12 by 12 pixels each were cutout from the 128by 128 3 channel images. The cutouts act as a method of regularization which does not create model sensitive hyperparameters, and hence is preferable for smaller, less deep models. This is suggested in this paper: https://arxiv.org/pdf/1708.04552.pdf 
@@ -37,3 +38,8 @@ A small segment in the second region was used for implementing the final Stochai
 ![SGDR](/Images/SGDR.png)
 
 5. This method was benchmarked against a RedceOnPlateau callback implementation.
+
+
+The final results obtianed are as follows:
+
+![Valid](/Images/Val-loss.png)
